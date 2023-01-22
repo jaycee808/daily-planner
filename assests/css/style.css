@@ -76,3 +76,7 @@ hr {
   background-color: rgb(158, 158, 158);
   height: 0.8px;
 }
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
