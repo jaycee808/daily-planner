@@ -7,3 +7,5 @@ console.log(currentTime);
 // display current date and time to the screen
 $('#currentDay').append(currentDay);
 $('#currentTime').append(currentTime);
+
+// variables for time blocks
