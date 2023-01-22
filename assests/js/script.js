@@ -4,10 +4,6 @@ console.log(currentDay);
 var currentTime = moment().format('LT');
 console.log(currentTime);
 
-// display current date and time to the screen
-$('#currentDay').append(currentDay);
-$('#currentTime').append(currentTime);
-
 // variables for time blocks
 var hour1 = document.querySelector('#hour1');
 var hour2 = document.querySelector('#hour2');
@@ -18,6 +14,10 @@ var hour6 = document.querySelector('#hour6');
 var hour7 = document.querySelector('#hour7');
 var hour8 = document.querySelector('#hour8');
 var hour9 = document.querySelector('#hour9');
+
+// display current date and time to the screen
+$('#currentDay').append(currentDay);
+$('#currentTime').append(currentTime);
 
 console.log(hour1.dataset.hour);
 console.log(hour2.dataset.hour);
