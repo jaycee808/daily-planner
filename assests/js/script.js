@@ -30,8 +30,7 @@ console.log(hour8.dataset.hour);
 console.log(hour9.dataset.hour);
 
 // variable to compare current hour
-var compareHour = moment().format('h');
-console.log(compareHour);
+var compareHour = moment().format('HH');
 
 // if statements to compare current hour with data-hour value
 if (hour1 && compareHour == 9) {
@@ -43,21 +42,21 @@ if (hour2 && compareHour == 10) {
 if (hour3 && compareHour == 11) {
     console.log("it's 11am");
 }
-if (hour1 && compareHour == 12) {
+if (hour4 && compareHour == 12) {
     console.log("it's 12pm");
 }
-if (hour4 && compareHour == 1) {
+if (hour5 && compareHour == 13) {
     console.log("it's 1pm");
 }
-if (hour5 && compareHour == 2) {
+if (hour6 && compareHour == 14) {
     console.log("it's 2pm");
 }
-if (hour6 && compareHour == 3) {
+if (hour7 && compareHour == 15) {
     console.log("it's 3pm");
 }
-if (hour7 && compareHour == 4) {
+if (hour8 && compareHour == 16) {
     console.log("it's 4pm");
 }
-if (hour8 && compareHour == 5) {
+if (hour9 && compareHour == 17) {
     console.log("it's 5pm");
 }
