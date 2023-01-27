@@ -17,19 +17,8 @@ var hour9 = document.querySelector('#hour9');
 $('#currentDay').append(currentDay);
 $('#currentTime').append(currentTime);
 
-console.log(hour1.dataset.hour);
-console.log(hour2.dataset.hour);
-console.log(hour3.dataset.hour);
-console.log(hour4.dataset.hour);
-console.log(hour5.dataset.hour);
-console.log(hour6.dataset.hour);
-console.log(hour7.dataset.hour);
-console.log(hour8.dataset.hour);
-console.log(hour9.dataset.hour);
-
 // variable to compare current hour
 var compareHour = moment().format('HH');
-// var compareHour = 12;
 
 // if else statements to compare current hour with data-hour value and change style
 // 9am
@@ -120,59 +109,51 @@ saveBtn9am.onclick = function() {
     // 9am input
     var input9am = document.getElementById('active9');
     localStorage.setItem('input9am', JSON.stringify(active9.value));
-    console.log(active9.value);
+
 }
 
 saveBtn10am.onclick = function() {
     // 10am input
     var input10am = document.getElementById('active10');
     localStorage.setItem('input10am', JSON.stringify(active10.value));
-    console.log(active10.value);
 }
 
 saveBtn11am.onclick = function() {
     // 11am input
     var input9am = document.getElementById('active11');
     localStorage.setItem('input11am', JSON.stringify(active11.value));
-    console.log(active11.value);
 }
 
 saveBtn12pm.onclick = function() {
     // 12pm input
     var input12pm = document.getElementById('active12');
     localStorage.setItem('input12am', JSON.stringify(active12.value));
-    console.log(active12.value);
 }
 
 saveBtn1pm.onclick = function() {
     // 1pm input
     var input1pm = document.getElementById('active13');
     localStorage.setItem('input1pm', JSON.stringify(active13.value));
-    console.log(active13.value);
 }
 
 saveBtn2pm.onclick = function() {
     // 2pm input
     var input2pm = document.getElementById('active14');
     localStorage.setItem('input2pm', JSON.stringify(active14.value));
-    console.log(active14.value);
 }
 saveBtn3pm.onclick = function() {
     // 3pm input
     var input3pm = document.getElementById('active15');
     localStorage.setItem('input3pm', JSON.stringify(active15.value));
-    console.log(active15.value);
 }
 
 saveBtn4pm.onclick = function() {
     // 4pm input
     var input4pm = document.getElementById('active16');
     localStorage.setItem('input4pm', JSON.stringify(active16.value));
-    console.log(active16.value);
 }
 saveBtn5pm.onclick = function() {
     // 5pm input
     var input5pm = document.getElementById('active17');
     localStorage.setItem('input5pm', JSON.stringify(active17.value));
-    console.log(active17.value);
 }
