@@ -14,6 +14,7 @@ var hour6 = document.querySelector('#hour6');
 var hour7 = document.querySelector('#hour7');
 var hour8 = document.querySelector('#hour8');
 var hour9 = document.querySelector('#hour9');
+var hourOneInput = document.querySelector('#active9');
 
 // display current date and time to the screen
 $('#currentDay').append(currentDay);
@@ -114,4 +115,24 @@ if (hour9 && compareHour == 17) {
     $('#active17').addClass('past');
 } else {
     $('#active17').addClass('future');
+}
+
+// local storage
+var inputKey = document.getElementById('inputKey');
+var saveBtn = document.getElementById('saveBtn');
+
+
+saveBtn.onclick = function() {
+    var hourOneText = document.getElementById('hourOneText');
+    var inputText = document.getElementById('active9');
+    localStorage.setItem('inputText', JSON.stringify(active9.value));
+    var retrieveData = localStorage.getItem('active9');
+    var lastInput = JSON.parse(localStorage.getItem('active9.value'));
+    hourOneText.innerHTML = `${lastInput}`;
+
+    console.log(hourOneText);
+    console.log(inputText);
+    console.log(active9.value);
+    console.log(retrieveData);
+    console.log(lastInput);
 }
